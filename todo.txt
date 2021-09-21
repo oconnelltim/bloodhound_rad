@@ -1,0 +1,19 @@
+current to-do list:
+*********************
+1. add '|| die' or '|| warn' functionality/error checking to SQL commands in php scripts
+3. create cron daemon that cleans up studies > 6 months old (or how old? should users choose?) 
+4. create page for found studies
+5. Add functionality to check by accession if case is already tracked by this user, and just update it if it is
+6. Add proper error logging/exception handling to case_checker.pl
+7. Add code so that in case for some reason case_checker.pl gets run more than once per day, that it does an upsert, not just an insert into the database
+11. Update the php scripts to all use mysqli or PDO rather than mysql_ (now deprecated).
+
+
+completed to-do list:
+***********************
+2. create cron daemon that looks for daily new studies and adds entries to a new database table ('found_studies')
+7. Update the user table in the DB with an email column. 
+8. Make sure we're adding the user's email to the hash for the case in case_checker.pl
+9. Update the email sending routine to undef the objects at the end
+10. Consider adding a routine to just send one email tonight, not one email per study. 
+

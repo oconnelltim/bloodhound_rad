@@ -1,0 +1,35 @@
+So, Bloodhound is really, really raw right now. Yup, version 0.1.
+
+It's currently running on Ubuntu 14.04LTS, using a few PERL modules and
+dcmtk 3.6.0 that you may or may not have installed.  Installing on other 
+OS’s and even other versions of ubuntu will likely have changed paths, etc.
+
+One of these days I'll get around to writing a full install file, but 
+basically you'll need to a) set aside several hours to get this working 
+and b) do the following:
+1. Install PHP, Apache, MySQL and PERL
+2. Install Perl's LWP::Simple module using CPAN
+3. Install dcmtk. 
+4. Set up your bloodhound server in your PACS so that it has C-FIND access. 
+5. Edit the 'settings.php' file to match your relevant settings
+6. Create the database using the bloodhound.sql file  and deploy the files to your apache directory
+7. Put a new logo into the /img directory called ‘bloodhound_title.jpg’ if you want
+8. Get a google account and use the google script (noted below) to send emails to get around your firewall, if that’s relevant to you. 
+9. Go through the case_checker.pl file and edit the DICOM settings, database settings, path to your log file, and the URL to use the google script for sending email, if you choose to set that up. 
+
+Bloodhound emails people when they have new studies; email inside of a hospital
+firewall is hard.  We've set up a google account and use the script called
+'code.gs' in this directory  along with the case_checker.pl file to bypass the firewall and 
+send our users their emails about studies.  Feel free to use this method with your own account
+or build your own.  
+
+I'm sorry, but I don't have time right now to write up how to do all this
+in windows, or any other *nix.  It will certainly work on any OS that supports these 
+platforms/software, but you'll have to do it yourself. 
+
+Happy trails. 
+
+Tim
+
+
+

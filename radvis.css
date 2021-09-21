@@ -1,0 +1,106 @@
+body {
+	background-color: #ffffff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+textarea { background-color: #B0B0B0;
+}
+input{ background-color: #ffffff;
+}
+input.button{ background-color: #B0B0B0;
+}
+a:link{ color: #0000FF;}
+#bar {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+}
+table {
+	border-collapse:collapse;
+}
+td.invis {
+	border: 0px solid black;
+}
+table.sortable thead {
+        background-color:#eee;
+        color:#666666;
+        font-weight: bold;
+        cursor: default;
+}
+
+
+table.login {
+	background-color: #ffffff;
+	border: #909090 1px solid;
+	font-size: 10px;
+	/* font-weight: bold; */
+	color: #000000;} table.dlptable {
+	border: 1px solid black;
+	background-color: #ffffff;
+	font-size: 12px;
+	/* font-weight: bold; */
+	color: #000000;} table.dlptable tr{
+	border: 1px solid black;
+	background-color: #ffffff;
+	font-size: 12px;
+	/* font-weight: bold; */
+	color: #000000;}
+	
+table.dlptable td{
+	border: 1px solid black;
+	background-color: #ffffff;
+	font-size: 12px;
+	/* font-weight: bold; */
+	color: #000000;}
+	
+table.dlptable th{
+	border: 1px solid black;
+	white-space:nowrap;
+	background-color:#eee;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: default;
+}
+	
+table.dlptable tr.d0 td {
+	background-color: #eee;
+}
+table.dlptable tr.d1 td {
+	background-color: #eee;
+	white-space:nowrap;
+	text-align:center;
+}
+table.dlptable td.d1{
+	white-space:nowrap;
+	text-align:center;
+}
+tr{
+	font-size: 12px; /*	font-weight: bold; */
+	color: #000000;}
+	
+.btn {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    background-color: #E0E0E0;
+    border: 1px solid #808080;
+}
+IMG.title{
+    display: block;
+    margin: auto;
+	text-align:center;
+}
+ 
+#report {
+    width: 650px;
+    text-align: left;
+    border: solid black 1px;
+}
+#footer {
+	width: 650px;
+	text-align: left;
+    border: solid black 1px;
+    float: left;
+}
